@@ -1,0 +1,20 @@
+html
+  head
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css")
+    title= "Home Page"
+  body
+    p= message 
+    form(action="/make-registration", method="post") 
+        div(class="container w-25 d-flex mt-5 p-2 flex-column border border-dark rounded")
+            div(class="form-group w-100 mx-auto")
+                input(type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email")
+                small(id="emailHelp" class="form-text text-muted") We'll never share your email with anyone else.
+            
+            div(class="form-group w-100 mx-auto")
+                input(type="password" class="form-control" id="exampleInputPassword1" placeholder="Password")
+            
+            div(class="form-check w-100 mx-auto")
+                input(type="checkbox" class="form-check-input" id="exampleCheck1") 
+                p Remember-me
+            button(type="submit" class="btn btn-dark mx-auto") Submit
+    
